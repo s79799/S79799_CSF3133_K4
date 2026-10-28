@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Course Feedback</title>
+</head>
+<body>
+
+<header>
+ 	<h1>CSF3133 Course Feedback</h1>
+</header>
+
+<nav>
+	<a href="#results">Results</a> | <a href="#form">Feedback Form</a> | <a href="#comments">Students Comments</a>
+</nav>
+
+<section id="results">
+ 	<h2>Feedback Summary</h2>
+ 	<table border="1">
+		<thead>
+			<tr>
+ 				<th>Week</th>
+				<th>Topic</th>
+				<th>Rating</th>
+ 			</tr>
+		</thead>
+		<tbody>
+			<tr>
+ 				<td>1</td>
+				<td>Introduction to HTML</td>
+ 				<td>4.5</td>
+			</tr>
+ 			<tr>
+ 				<td>2</td>
+				<td>Tables and Forms</td>
+				<td>4.2</td>
+			</tr>
+			<tr>
+				<td>3</td>
+ 				<td>Semantic HTML</td>
+				<td>4.0</td>
+			</tr>
+			<tr>
+				<td>4</td>
+ 				<td rowspan="2">Mini Project</td>
+				<td>4.2</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<!-- Added missing cell to handle the rowspan shift -->
+				<td>4.7</td>
+			</tr>
+			<tr>
+
+ 				<td colspan="2">Average Rating</td>
+				<td>4.55</td>
+			</tr>
+		</tbody>
+	</table>
+</section>
+
+<section id="form">
+ 	<h2>Give Your Feedback</h2>
+ 	<form action="submit_feedback.php" method="post">
+ 		<label for="fullname">Name:</label>
+ 		<input type="text" id="fullname" name="name"><br><br>
+
+		<label for="email">E-mail Address:</label>
+		<input type="email" id="email" name="email" required><br><br>
+
+ 		<label>Overall rating:</label><br>
+ 		<input type="radio" id="good" name="rating" value="good">
+ 		<label for="good">Good</label>
+ 		
+		<input type="radio" id="average" name="rating" value="average">
+ 		<label for="average">Average</label><br>
+ 		
+		<input type="radio" id="poor" name="rating" value="poor">
+ 		<label for="poor">Poor</label><br><br>
+
+		<input type="checkbox" id="lab" name="lab" value="yes">
+ 		<label for="lab">I attended all labs</label><br><br>
+		
+		<label>Topics you practiced:</label><br>
+		<input type="checkbox" id="practice" name="topics[]" value="html">
+ 		<label for="practice">HTML Tables</label><br>
+		
+		<input type="checkbox" id="forms" name="topics[]" value="forms">
+ 		<label for="forms">Form Elements & Validation</label><br>
+		
+		<input type="checkbox" id="semantic" name="topics[]" value="semantic">
+ 		<label for="semantic">Semantic Structuring</label><br>
+
+		<p>
+			<label for="section">Section / Group:</label><br>
+			<select id="section" name="section">
+                <option value="g1">Section 01 - Morning</option>
+                <option value="g2">Section 02 - Afternoon</option>
+                <option value="g3">Section 03 - Evening</option>
+			</select>
+		</p>
+		
+		<p>
+		 	<input type="submit" value="Submit">
+		</p>
+ 	</form>
+</section>
+
+<section id="comments">
+	<h2>Student Comments</h2>
+	<article>
+		<h3>Alex</h3>
+		<p>The practical lab sessions were extremely helpful for mastering tables and complex forms.</p>
+	</article>
+	<article>
+		<h3>Nur</h3>
+		<p>Great pace throughout HTML topics. I enjoyed it.</p>
+	</article>
+</section>
+
+<footer>
+	<p>Copyright &copy; 2026 CSF3133</p>
+</footer>
+
+</body>
+</html>

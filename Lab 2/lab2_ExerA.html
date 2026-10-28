@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Day</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#Event-Schedule">Event Schedule</a> | 
+            <a href="#About-the-Event">About the Event</a> | 
+            <a href="#Registration">Registration</a>
+        </nav>
+        <h1>Career Day</h1>
+    </header>
+
+    <!-- 1. About the Event Section -->
+    <section id="About-the-Event">
+        <h2>About the Event</h2>
+        <p>The Tech & AI Career Expo: Kuala Lumpur 2026 is here 🚀 We're thrilled to collaborate with DayOne to bring you the Tech & AI Career Expo! Come join us in an exciting opportunity designed to kickstart your journey into the world of technology. 🤖💡</p>
+        <p>Just graduated? Exploring your career path? Curious about opportunities in Engineering, Tech & AI? This is your chance to connect with top organisations, recruiters, and industry experts, ready to shape the future of innovation. ✨</p>
+        
+        <article>
+            <h3>Keynote Speaker: Dr Kaylie</h3>
+            <p>Dr Kaylie is a leading AI researcher with over 15 years of industry experience. She will be discussing the future of full-stack engineering and intelligent automation.</p>
+        </article>
+        
+        <article>
+            <h3>IGNITE 2026 (UTHM)</h3>
+            <p>Formerly the standard career fair, now rebranded as the Industry, Graduates, Networking, Internship, and Technopreneurship expo.</p>
+        </article>
+    </section>
+
+    <hr>
+
+    <!-- 2. Event Schedule Section -->
+    <section id="Event-Schedule">
+        <h2>Event Schedule</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Activity</th>
+                    <th>Venue</th>
+                    <th>Person in Charge</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>08:30 AM - 09:00 AM</strong></td>
+                    <td>Registration & Breakfast</td>
+                    <td>Main Lobby</td>
+                    <td>Encik Akmal</td>
+                </tr>
+                <tr>
+                    <td><strong>09:00 AM - 10:00 AM</strong></td>
+                    <td>Opening Keynote & Future Trends</td>
+                    <td>Auditorium Hall</td>
+                    <td>Dr Kaylie</td>
+                </tr>
+                <tr>
+                    <td><strong>10:30 AM - 12:00 PM</strong></td>
+                    <td>Panel Discussion: AI Ethics & Implementation</td>
+                    <td>Auditorium Hall</td>
+                    <td>Dr Lyana</td>
+                </tr>
+                <tr>
+                    <td><strong>12:00 PM - 01:30 PM</strong></td>
+                    <td>Networking Lunch</td>
+                    <td colspan="2">Cafeteria Dahlia</td>
+                </tr>
+                <tr>
+                    <td><strong>01:30 PM - 03:00 PM</strong></td>
+                    <td>Technical Breakout Sessions</td>
+                    <td>Auditorium Hall</td>
+                    <td>Sir Azrul</td>
+                </tr>
+                <tr>
+                    <td><strong>03:30 PM - 05:00 PM</strong></td>
+                    <td>Closing Remarks & Cocktail Hour</td>
+                    <td>Auditorium Hall</td>
+                    <td>All Speakers</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- 3. Registration Section -->
+    <section id="Registration">
+        <h2>Registration</h2>
+        <p>Secure your spot today. Don't forget the date!!!</p>
+        <form action="register.html" method="post">
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" required><br><br>
+
+            <label for="matnum">Matric Number:</label><br>
+            <input type="text" id="matnum" name="matnum" required><br><br>
+
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label>Year of Study:</label><br>
+            <input type="radio" id="year1" name="year" value="year1">
+            <label for="year1">Year 1</label><br>
+            <input type="radio" id="year2" name="year" value="year2">
+            <label for="year2">Year 2</label><br>
+            <input type="radio" id="year3" name="year" value="year3">
+            <label for="year3">Year 3</label><br>
+            <input type="radio" id="year4" name="year" value="year4">
+            <label for="year4">Year 4</label><br><br>
+
+            <label>Select your sessions to attend:</label><br>
+            <input type="checkbox" id="sessions1" name="sessions" value="Keynote">
+            <label for="sessions1">Opening Keynote & Future Trends</label><br>
+            <input type="checkbox" id="sessions2" name="sessions" value="AI">
+            <label for="sessions2">Panel Discussion: AI Ethics & Implementation</label><br>
+            <input type="checkbox" id="sessions3" name="sessions" value="Technical">
+            <label for="sessions3">Technical Breakout Sessions</label><br><br>
+
+            <label for="programme">Programme :</label>
+            <select id="programme" name="programme">
+                <option value="kp">SM SAINS KOMPUTER (KEJURUTERAAN PERISIAN)</option>
+                <option value="kma">SM SAINS KOMPUTER (KOMPUTER MUDAH ALIH)</option>
+                <option value="im">SM SAINS KOMPUTER (INFORMATIK MARITIM)</option>
+                <option value="kka">SM SAINS KOMPUTER (KESELAMATAN KOMPUTERAN AWAM)</option>
+            </select><br><br>
+
+            <input type="submit" value="Register Now">
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- 4. Footer -->
+    <footer>
+        <p>Copyright &copy; 2026 My Web Page</p>
+    </footer>
+</body>
+</html>
