@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Terengganu – Tourism Promotion</title>
+
+    <!-- Link to External CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS for Page-Specific Heading Decorations & Link States -->
+    <style>
+        /* Text decoration on main headings */
+        h1 {
+            text-decoration: overline;
+        }
+
+        h2 {
+            text-decoration: underline;
+        }
+
+        /* Interactive link states in exact LVHA order (link -> visited -> hover -> active) */
+        main a:link, footer a:link {
+            color: #005f73;
+        }
+
+        main a:visited, footer a:visited {
+            color: #5a189a;
+        }
+
+        main a:hover, footer a:hover {
+            color: #ee9b00;
+        }
+
+        main a:active, footer a:active {
+            color: #ae2012;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Page Header Section -->
+    <header>
+        <h1>Discover Terengganu your way.</h1>
+        <p>Explore attractions, culture, heritage, local experiences, travel packages and 2026 events in one simple guide.</p>
+    </header>
+
+    <!-- Navigation Bar Section -->
+    <nav>
+        <ul>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#video">Promo Video</a></li>
+            <li><a href="#trip">Book a Trip</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main>
+
+        <!-- Section 1: Destinations with Articles and Meter -->
+        <section id="destinations">
+            <h2>PLACES OF INTEREST</h2>
+
+            <article class="card">
+                <h3>PULAU REDANG (REDANG ISLAND)</h3>
+                <p>Pulau Redang is the state’s largest island, lying approximately 45km off the coast of Terengganu. Pulau Redang is cited as one of the world’s most beautiful islands. This marine park contains hundreds of coral species and thousands of colourful marine species, including manta rays, stingrays and reef sharks. The island also boasts 31 spectacular dive sites which include two World War II wrecks and a black coral garden.</p>
+                <p>Package Price: <span class="old-price">RM 350</span> <span class="new-price">RM 249</span></p>
+            </article>
+
+            <article class="card">
+                <h3>TERENGGANU DRAWBRIDGE &amp; PASAR PAYANG 2</h3>
+                <p>A brand-new prestigious landmark in Terengganu, the iconic drawbridge spans Sungai Terengganu, connecting Kuala Terengganu to Kuala Nerus. Completed in 2019, the structure has four 15-storey high towers and sky bridges which are illuminated by night.</p>
+		<p>Pasar Payang 2 is Kuala Terengganu’s central market. The market offers a variety of fresh local produce, traditional snacks, textiles, handicrafts, trinkets and more. The nearby Waterfront Heritage Bazaar is another must-visit for visitors to Terengganu as it boasts an interesting selection of shops selling all kinds of local handicrafts and delicacies.</p>
+                <p>Package Price: <span class="old-price">RM 150</span> <span class="new-price">RM 99</span></p>
+            </article>
+
+            <article class="card">
+                <h3>TASIK KENYIR (LAKE KENYIR)</h3>
+                <p>Lake Kenyir, an alternative gateway to Taman Negara, is the largest man-made lake in Southeast Asia. It is also where the country’s largest hydroelectric dam is located. A thriving habitat for a variety of small animals, its challenging landscape of rugged terrains, rapids, waterfalls, caves and swamp areas make it an ideal venue for a variety of outdoor activities. Enjoy a holiday on board a houseboat, go canoeing, fishing, jungle trekking or camping.</p>
+                <p>Package Price: <span class="old-price">RM 299</span> <span class="new-price">RM 199</span></p>
+            </article>
+
+            <article class="card">
+                <h3>KAMPUNG CINA (CHINATOWN)</h3>
+                <p>Established by the Chinese community in the late 19th century, Kampung Cina was once a major centre of commercial activity in its heyday. Today, the quaint streets of the 200-year-old village are lined with souvenir shops, restaurants that serve some of the best traditional fare, a place of worship as well as a variety of other stores.</p>
+                <p>Package Price: <span class="old-price">RM 299</span> <span class="new-price">RM 199</span></p>
+            </article>
+
+            <!-- Meter Element Showing Trip Seat Availability -->
+            <div class="seat-status">
+                <label for="trip-seats"><strong>Current Trip Seats Filled (28 / 40):</strong></label>
+                <meter id="trip-seats" min="0" max="40" value="28">28 out of 40 seats</meter>
+            </div>
+        </section>
+
+        <!-- Section 2: Embedded Promotional Video -->
+        <section id="video">
+            <h2>Experience Terengganu in Motion</h2>
+            <figure>
+                <video width="640" height="360" controls>
+                    <source src="ScenicDriveTerengganu.mp4" type="video/mp4">
+                    Your browser does not support the HTML5 video tag.
+                </video>
+                <figcaption>Scenic drive Terengganu</figcaption>
+	     </figure>
+	     <figure>
+                <video width="640" height="360" controls>
+                    <source src="EverythingSnap.mp4" type="video/mp4">
+                    Your browser does not support the HTML5 video tag.
+                </video>
+                <figcaption>Everything is in Terengganu</figcaption>
+            </figure>
+        </section>
+
+        <!-- Section 3: Trip Interest Form -->
+        <section id="trip">
+            <h2>Trip Interest Registration</h2>
+            <p>Fill out the form below to reserve your seat or request a custom itinerary. Need help? <a href="#contact-info">Contact our tourism desk</a>.</p>
+
+            <form action="#" method="post" class="trip-form">
+                <!-- Name Input -->
+                <div class="form-row">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required>
+                </div>
+
+                <!-- E-mail Input -->
+                <div class="form-row">
+                    <label for="email">E-mail Address:</label>
+                    <input type="email" id="email" name="email" placeholder="student@umt.edu.my" required>
+                </div>
+
+                <!-- Traveller Type Radio Buttons -->
+                <div class="form-row">
+                    <p><strong>Traveller Type:</strong></p>
+                    <label><input type="radio" name="traveller" value="student" required> Student</label>
+                    <label><input type="radio" name="traveller" value="staff"> Staff</label>
+                    <label><input type="radio" name="traveller" value="public"> Public</label>
+                </div>
+
+                <!-- Interests Checkboxes -->
+                <div class="form-row">
+                    <p><strong>Interests:</strong></p>
+                    <label><input type="checkbox" name="interests" value="islands"> Islands</label>
+                    <label><input type="checkbox" name="interests" value="food"> Food</label>
+                    <label><input type="checkbox" name="interests" value="culture"> Culture</label>
+                    <label><input type="checkbox" name="interests" value="nature"> Nature</label>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-row">
+                    <button type="submit">Submit Trip Interest</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Page Footer with Copyright and Address -->
+    <footer id="contact-info">
+        <p>&copy; 2026 Terengganu State Tourism Promotion Office. All rights reserved.</p>
+        <address>
+            Visit Terengganu Information Center, Kuala Terengganu<br>
+            Email us at: <a href="mailto:info@visitterengganu.my">info@visitterengganu.my</a>
+        </address>
+    </footer>
+
+</body>
+</html>

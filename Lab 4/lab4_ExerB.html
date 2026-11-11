@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- Viewport meta tag added for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Café Campus</title>
+
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="cafe.css">
+
+    <!-- Internal CSS for page-specific styles -->
+    <style>
+        /* Interactive link states in correct LVHA order (link -> visited -> hover -> active) */
+        main a:link, footer a:link { color: #1A5276; }
+        main a:visited, footer a:visited { color: #7D3C98; }
+        main a:hover, footer a:hover { color: #E67E22; }
+        main a:active, footer a:active { color: #C0392B; }
+
+        /* Fixed property value from 'overlined' to 'overline' */
+        h1 { text-decoration: overline; }
+
+        /* Fixed missing colon after 'color' */
+        p { color: #333333; text-align: justify; }
+
+        /* Fixed selector from ID (#intro) to class (.intro) */
+        .intro {
+            font-size: 18px;
+            background-color: #FDEBD0;
+            padding: 10px;
+        }
+
+        /* Fixed missing dot for class selector (.highlight) */
+        .highlight {
+            font-weight: bold;
+            color: #C0392B;
+        }
+
+        /* Added class for crossed-out old promotional prices */
+        .old-price {
+            text-decoration: line-through;
+            color: #7F8C8D;
+            margin-right: 6px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    LIST OF ERRORS IDENTIFIED AND FIXED FROM ORIGINAL CODE:
+    Error 1 (Line 7): Used HTML comment syntax instead of CSS comment syntax inside the <style> block.
+    Error 2 (Line 9): Invalid CSS value 'list-style-type: no;' instead of 'list-style-type: none;'.
+    Error 3 (Lines 14-15): Incorrect link pseudo-class order ('a:hover' placed before 'a:visited', preventing hover styling on visited links).
+    Error 4 (Line 17): Invalid CSS value 'text-decoration: overlined;' instead of 'overline'.
+    Error 5 (Line 18): Missing colon between property and value in 'p {color #333333;}'.
+    Error 6 (Line 19): Used ID selector '#intro' in CSS instead of class selector '.intro' to match '<p class="intro">' on Line 41.
+    Error 7 (Line 21): Missing closing curly brace '}' for the '#intro' rule block.
+    Error 8 (Line 22): Missing leading dot '.' on class selector 'highlight' (written as element selector instead of '.highlight').
+    Error 9 (Line 34): Navigation link 'href="menu"' missing the hash symbol '#' to jump to the section ID ('href="#menu"').
+    Error 10 (Lines 42 & 46): Duplicate ID attribute 'id="item"' used on multiple <article> elements (changed to class="item").
+    Error 11 (Lines 53-54): Missing 'controls' attribute on <video> tag so user cannot play video, and invalid MIME type 'type="mp4"' instead of 'type="video/mp4"'.
+    -->
+
+    <!-- Page Header -->
+    <header>
+        <h1>e-Café Campus</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main>
+        <!-- Menu Section with Promotional Prices -->
+        <section id="menu">
+            <h2>Today's Menu</h2>
+            <p class="intro">Freshly brewed coffee and local delights every day.</p>
+            
+            <article class="item">
+                <h3>Kopi Tarik</h3>
+                <p>Promo Price: <span class="old-price">RM 4.50</span> <span class="highlight">RM 3.50</span></p>
+            </article>
+
+            <article class="item">
+                <h3>Nasi Lemak</h3>
+                <p>Promo Price: <span class="old-price">RM 6.50</span> <span class="highlight">RM 5.00</span></p>
+            </article>
+        </section>
+
+        <!-- Video Section with Figure and Figcaption -->
+        <section id="video">
+            <h2>Watch Our Story</h2>
+            <figure>
+                <video width="640" height="360" controls>
+                    <source src="cafe.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>A quick look inside e-Café Campus and our daily student specials.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Customer Feedback Form Section -->
+        <section id="feedback">
+            <h2>Customer Feedback</h2>
+            <form action="#" method="post" class="feedback-form">
+                <!-- Name Text Input -->
+                <div class="form-group">
+                    <label for="cust-name">Name:</label>
+                    <input type="text" id="cust-name" name="cust-name" placeholder="Enter your name" required>
+                </div>
+
+                <!-- E-mail Input -->
+                <div class="form-group">
+                    <label for="cust-email">E-mail:</label>
+                    <input type="email" id="cust-email" name="cust-email" placeholder="student@umt.edu.my" required>
+                </div>
+
+                <!-- Visit Type Radio Buttons -->
+                <div class="form-group">
+                    <p><strong>Visit Type:</strong></p>
+                    <label><input type="radio" name="visit" value="dine-in" required> Dine-in</label>
+                    <label><input type="radio" name="visit" value="take-away"> Take-away</label>
+                </div>
+
+                <!-- Favourite Items Checkboxes -->
+                <div class="form-group">
+                    <p><strong>Favourite Items:</strong></p>
+                    <label><input type="checkbox" name="fav" value="kopi-tarik"> Kopi Tarik</label>
+                    <label><input type="checkbox" name="fav" value="nasi-lemak"> Nasi Lemak</label>
+                    <label><input type="checkbox" name="fav" value="roti-bakar"> Roti Bakar</label>
+                    <label><input type="checkbox" name="fav" value="teh-ais"> Teh Ais</label>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-group">
+                    <button type="submit">Submit Feedback</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Page Footer with Address and Mailto Link -->
+    <footer id="contact">
+        <p>&copy; 2026 e-Café Campus</p>
+        <address>
+            Student Center Ground Floor, Campus Grounds<br>
+            Email: <a href="mailto:ecafe@campus.edu.my">ecafe@campus.edu.my</a>
+        </address>
+    </footer>
+</body>
+</html>

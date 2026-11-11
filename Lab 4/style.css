@@ -1,0 +1,198 @@
+/* General Page Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #222222;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    /* Lapisan gelap (overlay) + Gambar latar belakang */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("background.jpg");
+    
+    /* Pastikan gambar memenuhi ruang header tanpa herot */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* Warna sandaran jika gambar gagal dimuatkan */
+    background-color: #005f73;
+    
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 15px; /* Tambah padding supaya gambar lebih nampak */
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 2.2em;
+}
+
+/* Navigation Bar Styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #0a9396;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Navigation Hover State */
+nav ul li a:hover {
+    background-color: #ee9b00;
+    color: #001219;
+}
+
+/* Responsive Main Container */
+main {
+    width: 90%;
+    max-width: 960px;
+    margin: 20px auto;
+}
+
+/* ID Selectors for Sections */
+#destinations, #video, #trip {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+}
+
+/* Destination Cards Class Selector */
+.card {
+    background-color: #e9f5f5;
+    border: 1px solid #94d2bd;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #005f73;
+}
+
+/* Price Text Decoration Class Selectors */
+.old-price {
+    text-decoration: line-through;
+    color: #9b2226;
+    margin-right: 8px;
+}
+
+.new-price {
+    font-weight: bold;
+    color: #005f73;
+    font-size: 1.1em;
+}
+
+/* Seat Meter Styling */
+.seat-status {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #fefae0;
+    border: 1px solid #e9d8a6;
+    border-radius: 6px;
+}
+
+meter {
+    width: 200px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+/* Responsive Video & Figure Styling */
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #005f73;
+    border-radius: 6px;
+}
+
+figcaption {
+    margin-top: 8px;
+    font-style: italic;
+    color: #555555;
+}
+
+/* Trip Interest Form Class Selector */
+.trip-form {
+    background-color: #f8fafc;
+    padding: 20px;
+    border: 2px solid #0a9396;
+    border-radius: 8px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.form-row {
+    margin-bottom: 15px;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #94a3b8;
+    border-radius: 4px;
+}
+
+.form-row label {
+    margin-right: 15px;
+}
+
+button[type="submit"] {
+    background-color: #005f73;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0a9396;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #001219;
+    color: #e9d8a6;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer address {
+    margin-top: 8px;
+    font-style: normal;
+}
+
+footer a:link {
+    color: #94d2bd;
+}
