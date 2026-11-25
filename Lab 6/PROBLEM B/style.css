@@ -1,0 +1,85 @@
+/* Page layout and typography */
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background-color: #f9fbfc;
+    color: #222;
+}
+
+h2 {
+    color: #1b4f72;
+}
+
+/* Form box styling */
+form {
+    background: #ffffff;
+    padding: 20px;
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+    max-width: 350px;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 95%;
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+}
+
+/* Button styling with hover effect */
+button {
+    padding: 8px 14px;
+    background-color: #2874a6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #1b4f72;
+}
+
+/* Result and timestamp text */
+#result {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+#timestamp {
+    font-size: 14px;
+    color: #2e7d32;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Grade table styling */
+table {
+    border-collapse: collapse;
+    margin-top: 15px;
+    width: 280px;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #1b4f72;
+    color: white;
+}
